@@ -19,6 +19,9 @@ class ViewController: UIViewController {
 
     @IBAction func keyPressed(_ sender: UIButton) {
         playSound()
+        
+        print(sender.currentTitle)
+        print(sender.titleLabel?.text)
     }
     //1. grabbing the sound file from resources
     //2. then we tell audio player which file to play
